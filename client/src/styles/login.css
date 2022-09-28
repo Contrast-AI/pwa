@@ -1,0 +1,16 @@
+.login-box {
+  background-color: lightblue;;
+  height: 100vh;
+  border-radius: 5%;
+  padding: 20%;
+  margin: 10%;
+  min-width: 500px;
+  max-width: 1000px;
+
+}
+
+.logo {
+  object-fit: contain;
+  width: 100%;
+  height: 250px;
+}
