@@ -1,10 +1,9 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Restaurant from "./components/restaurants";
-import RestaurantsList from "./components/restaurants-list";
 import Login from "./components/login"
 import Home from "./components/home"
+import Notebook from "./components/notebook"
 
 function App() {
   const [user, setUser] = React.useState(null);
@@ -20,12 +19,12 @@ function App() {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <a href="/" className="navbar-brand">
-          ContrastAI PWA
+          Home
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link to="/restaurants" className="nav-link">
-              Backend Data Demo
+            <Link to="/notebook" className="nav-link">
+              Notebook
             </Link>
           </li>
           <li className="nav-item" >
@@ -42,23 +41,20 @@ function App() {
           </li>
         </div> 
       </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/notebook" element={<Notebook />} />
+        <Route
+          path="/notebook/:id"
+          element={<Notebook />}
 
-      <div className="container mt-3">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/restaurants" element={<RestaurantsList />} />
-          <Route
-            path="/restaurants/:id"
-            element={<Restaurant />}
+        />
+        <Route
+          path="/login"
+          element={<Login />}
 
-          />
-          <Route
-            path="/login"
-            element={<Login />}
-
-          />
-        </Routes>
-      </div>
+        />
+      </Routes>
     </div>
   );
 }
