@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Restaurant from "./components/restaurants";
 import RestaurantsList from "./components/restaurants-list";
+import "./styles/home.css"
 import Login from "./components/login"
 import Home from "./components/home"
 
@@ -43,7 +44,7 @@ function App() {
         </div> 
       </nav>
 
-      <div className="container mt-3">
+      <div className="container container-no-margin">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/restaurants" element={<RestaurantsList />} />

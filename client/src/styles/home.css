@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.container-no-margin {
+    --bs-gutter-x: 0r;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0; 
+    padding-left: 0; 
+    margin-right: 0;
+    margin-left: 0;
+}
