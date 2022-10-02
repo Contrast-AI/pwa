@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -12,47 +16,57 @@
   --text-muted-hsl: 150, 50%, 98%;
 }
 
-.full-screen-container {
-  background-image: url("../backgrounds/bg10.jpg");
-  height: 100vh;
-  width: 97.5vw;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  overflow-x: hidden;
-}
-
 .login-box {
-  --color: hsl(var(--primary-light-hsl), 0.9);
+  position: absolute;
+  align-items: center;
+  top: 10%;
+  bottom: 10%;
+  right: 20%;
+  left: 20%;
+  min-width: 300px;
+  max-width: 450px;
+  min-height: 500px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  --color: hsl(var(--primary-light-hsl), 0.2);
   background-color: var(--color);
   box-shadow: 0 0 15px 0 var(--color);
-  height: 80vh;
-  border-radius: 5%;
-  padding: 40px 50px;
-  margin: 10%;
-  min-width: 500px;
-  max-width: 1000px;
+  border-radius: 1%;
+  border-color: hsl(var(--primary-dark-hsl), 0.2);
+  border-width: 1px;
+  border-style: solid;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .logo {
-  object-fit: contain;
-  margin: 0;
+  position: absolute;
+  top: 10%;
+  bottom: 80%;
   width: 100%;
-  height: 250px;
+  padding: 10%;
+  align-content: stretch;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .form {
-  display: flex;
+  position: absolute;
+  top: 50%;
+  bottom: 60%;
+  left: 0%;
+  right: 0%;
+  margin: 5%;
+  margin-top: auto;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 40px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  margin: 5%;
 }
 
 .form-group label {
@@ -92,7 +106,10 @@
 }
 
 .login-button {
-  padding: 0.5em 1em;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  margin-top: 5%;
   font-size: 1.5rem;
   font-weight: lighter;
   color: white;
@@ -106,4 +123,15 @@
 .login-button:hover,
 .login-button:focus {
   background-color: hsl(var(--primary-hsl), 0.4);
+}
+
+.register {
+  position: absolute;
+  top: 90%;
+  bottom: 5%;
+  left: 0%;
+  right: 0%;
+
+  padding-bottom: 5%;
+  text-align: center;
 }
