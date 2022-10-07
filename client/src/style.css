@@ -82,7 +82,6 @@ body {
 
 ::placeholder {
   font-weight: 100;
-  font-style: italic;
   font-size: 1em;
   color: hsl(var(--silver-sand-hsl));
   padding: 5px;
