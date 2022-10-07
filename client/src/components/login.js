@@ -6,7 +6,7 @@ function Login() {
   return (
     <div class="container-fluid overflow-auto">
       <div class="row-10">
-        <div class="col-10">
+        <div class="col-12">
           <div class="login-box">
             <div class="row-12">
               <img class="logo" src={require("../images/ContrastLogo.png")} alt="ContrastLogo"/>
@@ -22,7 +22,7 @@ function Login() {
             </div>  
             <div class="row-12 register">
               <a href="https://www.linkedin.com/feed/" class="link-secondary">Forgot password?</a>
-            </div>            
+            </div>
           </div>
         </div>
 

@@ -25,8 +25,8 @@ body {
   align-items: center;
   top: 10%;
   bottom: 10%;
-  right: 20%;
-  left: 20%;
+  right: 10%;
+  left: 10%;
   min-width: 300px;
   max-width: 450px;
   min-height: 500px;
@@ -46,7 +46,7 @@ body {
   top: 10%;
   bottom: 80%;
   width: 100%;
-  padding: 10%;
+  padding: 5%;
   align-content: stretch;
   flex: 0 0 auto;
   margin: 0 auto;
