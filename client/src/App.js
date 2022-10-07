@@ -3,7 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Restaurant from "./components/restaurants";
 import RestaurantsList from "./components/restaurants-list";
-import "./style.css"
+import "./css/style.css"
 import Login from "./components/login"
 import Home from "./components/home"
 
