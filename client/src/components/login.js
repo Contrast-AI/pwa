@@ -18,11 +18,11 @@ function Login() {
                   <div class="form-group">
                     <input type="password" id="password" placeholder="Enter Password" />
                   </div>
-                  <button type="submit" class="login-button">Log In</button>
+                  <button type="submit" class="login-button">SIGN IN</button>
                 </form>
             </div>  
             <div class="row-12 register">
-              or <a href="https://www.linkedin.com/feed/" class="link-primary">register now</a>
+              <a href="https://www.linkedin.com/feed/" class="link-secondary">Forgot password?</a>
             </div>            
           </div>
         </div>
