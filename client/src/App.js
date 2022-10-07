@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/login"
 import Home from "./components/home"
 import Notebook from "./components/notebook"
+import "./css/style.css"
 
 function App() {
   const [user, setUser] = React.useState(null);

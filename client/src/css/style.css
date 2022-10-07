@@ -42,3 +42,140 @@
 textarea#text {
     outline: none;
 }
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --primary-light-hsl: 205, 70%, 80%;
+  --primary-hsl: 205, 70%, 50%;
+  --primary-dark-hsl: 205, 70%, 20%;
+  --text-muted-hsl: 150, 50%, 98%;
+  --athens-gray-hsl: 240, 3%, 93%; 
+  --dark-athens-gray-hsl: 240, 3%, 10%; 
+  --silver-sand-hsl: 204, 8%, 55%; 
+  --silver: 0, 0%, 75%;
+}
+
+.login-box {
+  position: absolute;
+  align-items: center;
+  top: 10%;
+  bottom: 10%;
+  right: 10%;
+  left: 10%;
+  min-width: 250px;
+  max-width: 450px;
+  min-height: 400px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1%;
+  border-color: hsl(var(--primary-dark-hsl), 0.2);
+  border-width: 1px;
+  border-style: solid;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.logo {
+  position: absolute;
+  top: 10%;
+  bottom: 80%;
+  width: 100%;
+  padding: 5%;
+  align-content: stretch;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  bottom: 60%;
+  left: 0%;
+  right: 0%;
+  margin: 5%;
+  margin-top: auto;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.form-group input {
+  font-size: 1.5rem;
+  border: 0;
+  border-bottom: 5px solid hsl(var(--athens-gray-hsl));
+  outline: none;
+  font-weight: 300;
+  color: black;
+  
+}
+
+::placeholder {
+  font-weight: 100;
+  font-size: 1em;
+  color: hsl(var(--silver-sand-hsl));
+  padding: 5px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-bottom: 5px solid black;
+}
+
+.form-group .msg {
+  display: none;
+  font-size: 0.75rem;
+}
+
+.input-group.success .msg,
+.input-group.error .msg {
+  display: block;
+}
+
+.login-button {
+  position: absolute;
+  left: 32%;
+  right: 32%;
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: .1rem;
+  color: black;
+  background-color: hsl(var(--athens-gray-hsl));
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.login-button:focus {
+  background-color: hsl(var(--primary-hsl), 0.4);
+}
+
+.register {
+  position: absolute;
+  top: 90%;
+  bottom: 5%;
+  left: 0%;
+  right: 0%;
+
+  padding-bottom: 5%;
+  text-align: center;
+}
