@@ -10,12 +10,12 @@ function Notebook() {
   }
 
   return (
-    <div class='container' style={{height: "800px"}}>
-      <div class="row h-100" style={{position: 'relative'}}>
-        <div class="col-4" style={{position: 'relative'}}>
-          <div class='notebook-box-container'>
-            <p class='notebook-header'>Patients:</p>
-            <div class="patients-box">
+    <div className='container' style={{height: "800px"}}>
+      <div className="row h-100" style={{position: 'relative'}}>
+        <div className="col-4" style={{position: 'relative'}}>
+          <div className='notebook-box-container'>
+            <p className='notebook-header'>Patients:</p>
+            <div className="patients-box">
               <Patient name="Patty O’Furniture" />
               <Patient name="Patty O’Furniture" />
               <Patient name="Patty O’Furniture" />
@@ -24,10 +24,10 @@ function Notebook() {
             </div>
           </div>
         </div>
-        <div class="col-8" style={{position: 'relative'}}>
-          <div class='notebook-box-container'>
-            <p class='notebook-header'>Notes:</p>
-            <textarea id="text" class="notes-box"/>
+        <div className="col-8" style={{position: 'relative'}}>
+          <div className='notebook-box-container'>
+            <p className='notebook-header'>Notes:</p>
+            <textarea id="text" className="notes-box"/>
           </div>
         </div>
       </div>
